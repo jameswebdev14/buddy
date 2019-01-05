@@ -1,0 +1,154 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nuxt-link-exact-active {
+    color: red;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.card__title {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.card-target {
+    padding-left: 15px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.card__text {
+    color: white;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 250px;
+}
+
+.highlight-text {
+    color: navy;
+    font-style: oblique;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#exercises {
+    margin: 0;
+    display: grid;
+    grid-row-gap: 15px;
+    grid-template-columns: fr;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+#exercises div img {
+    width: 100%;
+    height: 300px;
+}
+
+
+/****** MEDIUM VIEW ******/
+
+@media screen and (min-width:768px) {
+    .card {
+        margin: 20px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .card__title {
+        color: white;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    .card__text {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    .card-target {
+        padding-left: 15px;
+        font-size: 1.1rem;
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+    .form-container {
+        margin: 0 30px;
+    }
+    #exercises {
+        margin: 0 20px;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 380px 380px;
+        justify-content: center;
+    }
+    #exercises img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/****** LARGE VIEW *******/
+
+@media screen and (min-width: 1200px) {
+    .exercise-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(350px, auto) auto;
+        justify-content: center;
+        padding: 0 40px;
+    }
+    .card {
+        margin: 10px;
+    }
+    .v-card__title {
+        color: white;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    .card__text {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    .card-target {
+        padding-left: 15px;
+        font-size: 1.2rem;
+    }
+    .iframe {
+        width: 100%;
+        height: 360px;
+    }
+    .form-container {
+        margin: 0 100px;
+    }
+    #exercises {
+        margin: 0 30px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 500px 500px;
+        justify-content: center;
+    }
+    #exercises div img {
+        width: 100%;
+        height: 450px;
+    }
+    .v-icon {
+        margin-right: 5px
+    }
+}
